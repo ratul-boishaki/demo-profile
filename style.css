@@ -1,0 +1,432 @@
+/* common and reset code start here */
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    font-weight: 1000;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: "Edu NSW ACT Foundation",sans-serif;
+   
+    /* font-size: 57.5%; */
+    
+}
+body{
+    background-color: rgb(199, 193, 191);
+    max-width: 100%;
+    margin: auto;
+}
+.text-justfiy{
+    text-align: justify;
+
+}
+img{
+    width: 100%;
+    height: auto;
+}
+:root{
+    --padding: 1rem;
+    --text-color: white;
+    --text-color: black;
+    --box-shadow: .3rem .3rem .6rem , -.3rem 0rem .6rem;
+}
+.nav__list a{
+    color: black;
+}
+/* common and reset code end here */
+
+/* nav section start here */
+
+.barnd__icon{
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+#barnd-icon{
+    font-size: 6rem;
+    cursor: pointer;
+    display: none;
+    
+}
+
+
+.profile__img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: .2rem solid white;
+    padding: .1rem;
+    filter: saturate(0);
+}
+.profile__img:hover{
+    filter: saturate(1);
+    transform: scale(1.1);
+}
+
+.nav-section{
+    background-color:#699ce9; 
+    
+    padding: .3rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height: 5vh;
+    z-index: 10;
+    box-shadow: .3rem .3rem .6rem;
+}
+
+.nav-lists{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+.nav__list{
+    padding: 1rem;
+}
+nav a{
+    
+    font-size: 1rem;
+}
+.nav__list a:hover{
+    text-decoration: underline;
+    color: rgb(25, 55, 36);
+    
+}
+
+#menu-bar{
+    display: none;
+    cursor: pointer;
+}
+
+/* nav section end here */
+
+@media screen and (max-width:992px) {
+        
+}
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .nav-section{
+        text-align: center;
+    }
+    #menu-bar{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-lists{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .nav__list a{
+        font-size: 2rem;
+    }
+    .hidden{
+        display: none;
+    }
+    #menu-bar{
+        display: block;
+        display: flex;
+        
+    }
+    .barnd__icon{
+        display: none;
+    }
+    
+    #barnd-icon{
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0rem;
+    }
+
+
+    .message-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .message-header {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .message-header .message-sender {
+        margin-bottom: 20px;
+      }
+    
+      .message-profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .message-profile-image {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+      }
+    
+      .message-profile-name {
+        margin-bottom: 20px;
+      }
+    
+}
+
+/* responsivnes end */
+
+/* login html start here */
+
+  .login-panel {
+    width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 100px;
+    display: block;
+  }
+  
+  .login-panel h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 5rem;
+  }
+  .login-panel-header{
+    font-size: 1.4rem;
+    margin: 1.7rem;
+  }
+  
+  
+  .login-panel input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .login-panel label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #777;
+  }
+  
+  .login-panel button {
+    width: 100%;
+    padding: 10px;
+    background: #2691d9;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+
+  
+  .login-panel button:hover {
+    background: #1e78d2;
+  }
+  
+  .forgot {
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #777;
+  }
+  
+  .forgot a {
+    color: #2691d9;
+    text-decoration: none;
+  }
+  
+  .forgot a:hover {
+    text-decoration: underline;
+  }
+ 
+  .form-check-label{
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .login-panel {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+/* login html end here */
+
+
+
+/* profile html start here */
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .message-sender {
+    display: flex;
+    align-items: center;
+  }
+  
+  .message-date {
+    font-size: 14px;
+    color: #777;
+    margin-left: 20px;
+  }
+  
+  .message-content {
+    margin-bottom: 20px;
+  }
+  
+  .message-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .message-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .message-action {
+    background-color: #2691d9;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .message-action:hover {
+    background-color: #1e78d2;
+  }
+  
+  .message-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .message-count {
+    margin-right: 20px;
+  }
+  
+  .message-like {
+    margin-right: 20px;
+  }
+  
+  .message-share {
+    margin-right: 20px;
+  }
+  
+  .message-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .message-footer div {
+    margin-right: 20px;
+  }
+  
+  .message-profile {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .message-profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+  
+  .message-profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .message-profile-name {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-right: 20px;
+  }
+  
+  .message-profile-about {
+    margin-left: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #2691d9;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #1e78d2;
+  }
+  
+  @media screen and (max-width: 500px) {
+   
+  }
+
+/* profile html end here */
+
+
+
